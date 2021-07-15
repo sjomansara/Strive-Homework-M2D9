@@ -153,6 +153,10 @@ Make sure you check the documentation before creting anything custom.
         Use the elements of a card to display nicely the album informations such as album title, artist, year, etc..
     -->
 
+<!-- EXERCISE 3
+        Foreach album in the favorite list, place a badge on top of it with the genre of the album
+    -->
+
   <div class="container mb-5" id="2">
   <h3 class="text-center">My Favorite Albums</h3>
     <div class="row">
@@ -164,10 +168,6 @@ Make sure you check the documentation before creting anything custom.
                 <p class="card-text">DEAN</p>
             </div>
         </div>
-
- <!-- EXERCISE 3
-        Foreach album in the favorite list, place a badge on top of it with the genre of the album
-    -->
 
         <div class="card m-2" style="width: 18rem;">
             <img class="img mt-2" src="https://lastfm.freetls.fastly.net/i/u/770x0/dd45b0438a315aed98b5830aa2fc43c5.webp#dd45b0438a315aed98b5830aa2fc43c5" class="card-img-top"/>
@@ -293,7 +293,16 @@ Make sure you check the documentation before creting anything custom.
         (If you want, you can also add extra columns)
     -->
 
-    <div class="container text-center col-3">
+<!-- EXERCISE 5
+        Add a DELETE bootstrap button at the end of each row of the tracklist. 
+        Attach the functionality to remove its row when it gets clicked.  
+
+        ##EXTRA##
+        Make only one button visible at a time, for each row, when the single row gets hovered. 
+        Animate it with a fade-in effect upon the user hovering and fade-out when he/she goes away from it.
+    -->
+
+    <div class="container text-center col-4">
         <table class="table mb-5">
         <h3 class="mb-3">Tracklist</h3>
         <thead>
@@ -301,43 +310,51 @@ Make sure you check the documentation before creting anything custom.
             <th scope="col">Number</th>
             <th scope="col">Title</th>
             <th scope="col">Duration</th>
+            <th scope="col">Delete</th>
             </tr>
         </thead>
         <tbody>
-            <tr class="table-dark">
+            <tr class="table-dark" id="row1">
             <th scope="row">1</th>
             <td>And You? (outro)</td>
             <td>3:33</td>
+            <td><button type="button" class="btn btn-outline-light" onclick="onDeleteClick('row1')">Delete</button></td>
             </tr>
-            <tr class="table-dark">
+            <tr class="table-dark" id="row2">
             <th scope="row">2</th>
             <td>Pour Up</td>
             <td>3:36</td>
+            <td><button type="button" class="btn btn-outline-light" onclick="onDeleteClick('row2')">Delete</button></td>
             </tr>
-            <tr class="table-dark">
+            <tr class="table-dark" id="row3">
             <th scope="row">3</th>
             <td>Bonnie & Clyde</td>
             <td>1:53</td>
+            <td><button type="button" class="btn btn-outline-light" onclick="onDeleteClick('row3')">Delete</button></td>
             </tr>
-            <tr class="table-dark">
+            <tr class="table-dark" id="row4">
             <th scope="row">4</th>
             <td>what2do</td>
             <td>3:06</td>
+            <td><button type="button" class="btn btn-outline-light" onclick="onDeleteClick('row4')">Delete</button></td>
             </tr>
-            <tr class="table-dark">
+            <tr class="table-dark" id="row5">
             <th scope="row">5</th>
             <td>D (half moon)</td>
             <td>3:34</td>
+            <td><button type="button" class="btn btn-outline-light" onclick="onDeleteClick('row5')">Delete</button></td>
             </tr>
-            <tr class="table-dark">
+            <tr class="table-dark" id="row6">
             <th scope="row">6</th>
             <td>I Love It</td>
             <td>3:27</td>
+            <td><button type="button" class="btn btn-outline-light" onclick="onDeleteClick('row6')">Delete</button></td>
             </tr>
-            <tr class="table-dark">
+            <tr class="table-dark" id="row7">
             <th scope="row">7</th>
             <td>21</td>
             <td>4:13</td>
+            <td><button type="button" class="btn btn-outline-light" onclick="onDeleteClick('row7')">Delete</button></td>
             </tr>
         </tbody>
         </table>
@@ -395,6 +412,17 @@ Make sure you check the documentation before creting anything custom.
         <p class="text-light">&copy; Sara Sjöman 2021</p>
     </div>
   </footer>
+
+    <script>
+        // console.log(document.getElementsByTagName("tr"))
+
+        function onDeleteClick(id) {
+            let row = document.getElementById(id);
+            row.remove();
+        }
+
+
+    </script>
 
   </body>
 </html>
