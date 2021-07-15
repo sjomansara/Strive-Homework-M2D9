@@ -37,3 +37,19 @@ ol {
 .jumbotron {
     animation: fadein 2s;
 }
+
+.badge {
+    width: 70px;
+    position: absolute;
+    left:17px;
+    top:13px;
+    text-align: center;
+    border-radius: 30px 30px 30px 30px;
+    color:white;
+    padding:5px 10px;
+    font-size:15px;
+}
+
+.synthpop{
+    width: 110px;
+}
