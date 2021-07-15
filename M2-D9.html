@@ -15,19 +15,7 @@ Most of the requirements in this exercises reference a bootstrap's functionality
 Make sure you check the documentation before creting anything custom.
 -->
 
-<html>
-
-<head>
-    <!-- IMPORT ALL THE BOOSTRAP RELATED CSS & SCRIPTS-->
-
-    <style>
-        /* PREVIOUS CODE */
-    </style>
-</head>
-
-<body>
-
-    <!-- EXERCISE 1
+ <!-- EXERCISE 1
         Create a Jumbotron section with a quick explanation / image of the website.
         Make it appear with a fade-in animation effect when the page loads.
     -->
@@ -115,6 +103,244 @@ Make sure you check the documentation before creting anything custom.
         Considering the button you've created in ex. 5 that deletes the row:
         Add a fade-out effect to the row before it gets removed, using a CSS transition effect
     -->
-</body>
 
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous"
+    />
+  <link rel="stylesheet" href="styles.css">
+    <title>My Music Website</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#1">About Me</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#2">Favorite Albums</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#3">My Most Listened To Album</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#4">Worst Albums</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#5">Album Collage</a>
+            </li>
+        </ul>
+    </div>
+    </nav>
+
+  <div class="favorites">
+  <h1 class="text-center mb-5 mt-5">My Music Website</h1>
+
+ <div id="1">
+ <h3 class="text-center">About me</h3>
+
+ <p class="text-center mb-5">My name is Sara. I like listening to music and I enjoy finding new music to listen to.</p>
+ </div>
+
+  <div class="container mb-5" id="2">
+  <h3 class="text-center">My Favorite Albums</h3>
+    <div class="row">
+        <div class="card m-2" style="width: 18rem;">
+            <img class="img mt-2" src="https://lastfm.freetls.fastly.net/i/u/770x0/b8a2f25fbdce30cf18e7e5ca8088b21f.webp#b8a2f25fbdce30cf18e7e5ca8088b21f" class="card-img-top"/>
+            <div class="card-body">
+                <h5 class="card-title">130 mood : TRBL</h5>
+                <p class="card-text">DEAN</p>
+                <p class="card-text">R'n'B</p>
+            </div>
+        </div>
+
+        <div class="card m-2" style="width: 18rem;">
+            <img class="img mt-2" src="https://lastfm.freetls.fastly.net/i/u/770x0/dd45b0438a315aed98b5830aa2fc43c5.webp#dd45b0438a315aed98b5830aa2fc43c5" class="card-img-top"/>
+            <div class="card-body">
+                <h5 class="card-title">Currents</h5>
+                <p class="card-text">Tame Impala</p>
+                <p class="card-text">Synthpop</p>
+            </div>
+        </div>
+
+        <div class="card m-2" style="width: 18rem;">
+            <img class="img mt-2" src="https://lastfm.freetls.fastly.net/i/u/770x0/fb84b8be04ca949fa7cf1a28072e17e6.webp#fb84b8be04ca949fa7cf1a28072e17e6" class="card-img-top"/>
+            <div class="card-body">
+                <h5 class="card-title">SHE IS COMING</h5>
+                <p class="card-text">Miley Cyrus</p>
+                <p class="card-text">Pop</p>
+            </div>
+        </div>
+
+        <div class="card m-2" style="width: 18rem;">
+            <img class="img mt-2" src="https://lastfm.freetls.fastly.net/i/u/770x0/4549775c91db98f79dbfc1e75351333d.webp#4549775c91db98f79dbfc1e75351333d" class="card-img-top"/>
+            <div class="card-body">
+                <h5 class="card-title">Stranger</h5>
+                <p class="card-text">Yung Lean</p>
+                <p class="card-text">Rap</p>
+            </div>
+        </div>
+
+        <div class="card m-2" style="width: 18rem;">
+            <img class="img mt-2" src="https://lastfm.freetls.fastly.net/i/u/770x0/7b8087653d1b3c4d6c50d17813e59a70.webp#7b8087653d1b3c4d6c50d17813e59a70" class="card-img-top"/>
+            <div class="card-body">
+                <h5 class="card-title">Se syvenee syksyllä</h5>
+                <p class="card-text">Ruger Hauer</p>
+                <p class="card-text">Rap</p>
+            </div>
+        </div>
+
+        <div class="card m-2" style="width: 18rem;">
+            <img class="img mt-2" src="https://lastfm.freetls.fastly.net/i/u/770x0/b7498614ca565faaa2704654b638024e.webp#b7498614ca565faaa2704654b638024e" class="card-img-top"/>
+            <div class="card-body">
+                <h5 class="card-title">Blonde</h5>
+                <p class="card-text">Frank Ocean</p>
+                <p class="card-text">R'n'B</p>
+            </div>
+        </div>
+
+        <div class="card m-2" style="width: 18rem;">
+            <img class="img mt-2" src="https://lastfm.freetls.fastly.net/i/u/770x0/a4751e16719d4bd09d858fa7c2954f8f.webp#a4751e16719d4bd09d858fa7c2954f8f" class="card-img-top"/>
+            <div class="card-body">
+                <h5 class="card-title">FutureSex/LoveSounds</h5>
+                <p class="card-text">Justin Timberlake</p>
+                <p class="card-text">R'n'B</p>
+            </div>
+        </div>
+
+        <div class="card m-2" style="width: 18rem;">
+            <img class="img mt-2" src="https://lastfm.freetls.fastly.net/i/u/770x0/28ffd87a1e554022c0065398979894c4.webp#28ffd87a1e554022c0065398979894c4" class="card-img-top"/>
+            <div class="card-body">
+                <h5 class="card-title">Salad Days</h5>
+                <p class="card-text">Mac DeMarco</p>
+                <p class="card-text">Indie rock</p>
+            </div>
+        </div>
+
+        <div class="card m-2" style="width: 18rem;">
+            <img class="img mt-2" src="https://lastfm.freetls.fastly.net/i/u/770x0/a9b079c43657a260507f4bef8e7d3957.webp#a9b079c43657a260507f4bef8e7d3957" class="card-img-top"/>
+            <div class="card-body">
+                <h5 class="card-title">Isolation</h5>
+                <p class="card-text">Kali Uchis</p>
+                <p class="card-text">R'n'B</p>
+            </div>
+        </div>
+
+        <div class="card m-2" style="width: 18rem;">
+            <img class="img mt-2" src="https://lastfm.freetls.fastly.net/i/u/770x0/263d0050f43934c94de9897776e4a993.webp#263d0050f43934c94de9897776e4a993" class="card-img-top"/>
+            <div class="card-body">
+                <h5 class="card-title">The Life of Pablo</h5>
+                <p class="card-text">Kanye West</p>
+                <p class="card-text">Rap</p>
+            </div>
+        </div>
+
+        <div class="card m-2" style="width: 18rem;">
+            <img class="img mt-2" src="https://lastfm.freetls.fastly.net/i/u/770x0/434a922ecca5474f1f9d6bbcc3a1050c.webp#434a922ecca5474f1f9d6bbcc3a1050c" class="card-img-top"/>
+            <div class="card-body">
+                <h5 class="card-title">More Life</h5>
+                <p class="card-text">Drake</p>
+                <p class="card-text">R'n'B</p>
+            </div>
+        </div>
+
+        <div class="card m-2" style="width: 18rem;">
+            <img class="img mt-2" src="https://lastfm.freetls.fastly.net/i/u/770x0/24ff278069133faeb1ab65afb439a25d.webp#24ff278069133faeb1ab65afb439a25d" class="card-img-top"/>
+            <div class="card-body">
+                <h5 class="card-title">Rumours (Super Deluxe)</h5>
+                <p class="card-text">Fleetwood Mac</p>
+                <p class="card-text">Rock</p>
+            </div>
+        </div>
+
+    </div>
+  </div>
+
+  <div id="3">
+  <h3 class="text-center mt-3 mb-3">My Most Listened To Album</h3>
+    <div class="text-center mb-3">
+       <img id="image" src="https://lastfm.freetls.fastly.net/i/u/770x0/b8a2f25fbdce30cf18e7e5ca8088b21f.webp#b8a2f25fbdce30cf18e7e5ca8088b21f"/>
+    </div>
+        <div class="left mb-5">
+            <h6>Title: 130 mood : TRBL</h6>
+            <h6>Artist: DEAN</h6>
+            <h6>Release Year: 2016</h6>
+            <h6>Genre: R'n'B</h6>
+            <h6>Duration: 7 tracks, 24:04</h6>
+            <h6 class="mb-3">How many times I've played a song from this album: 1527</h6>
+        </div>
+  </div>
+
+    <div class="container text-center mt-2" id="4">
+    <h3 class"mb-3">Top 3 Worst Albums</h3>
+        <div>
+            <div class="row mb-4">
+                <div class="col-12 col-sm-4 col-xs-4 col-lg-4">
+                    <p class="mb-2">1. ALASTON SUÅMI by Petri Nygård</p>
+                    <img class="mb-4" id="imgsize" src="https://i.scdn.co/image/ab67616d0000b273c4ab1abad3685488e91b32a4"/>
+                </div>
+                <div class="col-12 col-sm-4 col-xs-4 col-lg-4">
+                    <p class="mb-2">2. Elonmerkki by Mikael Gabriel</p>
+                    <img class="mb-4" id="imgsize" src="https://i.scdn.co/image/ab67616d0000b2731fb62b484c611dfac47f3293"/>
+                </div>
+                <div class="col-12 col-sm-4 col-xs-4 col-lg-4">
+                    <p class="mb-2">3. Cyberspace by Yameii Online</p>
+                    <img class="mb-4" id="imgsize" src="https://i.scdn.co/image/ab67616d0000b273a458b7f15cff5bac47535297"/>
+                </div>
+                </div>
+        </div>
+    </div>
+
+  <div class="row text-center" id="5">
+    <h3 class="mb-3">Album Collage</h3>
+    <div class="column mb-5">
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/b8a2f25fbdce30cf18e7e5ca8088b21f.webp#b8a2f25fbdce30cf18e7e5ca8088b21f"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/dd45b0438a315aed98b5830aa2fc43c5.webp#dd45b0438a315aed98b5830aa2fc43c5"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/fb84b8be04ca949fa7cf1a28072e17e6.webp#fb84b8be04ca949fa7cf1a28072e17e6"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/4549775c91db98f79dbfc1e75351333d.webp#4549775c91db98f79dbfc1e75351333d"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/7b8087653d1b3c4d6c50d17813e59a70.webp#7b8087653d1b3c4d6c50d17813e59a70"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/b7498614ca565faaa2704654b638024e.webp#b7498614ca565faaa2704654b638024e"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/28ffd87a1e554022c0065398979894c4.webp#28ffd87a1e554022c0065398979894c4"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/a9b079c43657a260507f4bef8e7d3957.webp#a9b079c43657a260507f4bef8e7d3957"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/263d0050f43934c94de9897776e4a993.webp#263d0050f43934c94de9897776e4a993"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/434a922ecca5474f1f9d6bbcc3a1050c.webp#434a922ecca5474f1f9d6bbcc3a1050c"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/b8a2f25fbdce30cf18e7e5ca8088b21f.webp#b8a2f25fbdce30cf18e7e5ca8088b21f"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/dd45b0438a315aed98b5830aa2fc43c5.webp#dd45b0438a315aed98b5830aa2fc43c5"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/fb84b8be04ca949fa7cf1a28072e17e6.webp#fb84b8be04ca949fa7cf1a28072e17e6"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/4549775c91db98f79dbfc1e75351333d.webp#4549775c91db98f79dbfc1e75351333d"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/7b8087653d1b3c4d6c50d17813e59a70.webp#7b8087653d1b3c4d6c50d17813e59a70"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/b7498614ca565faaa2704654b638024e.webp#b7498614ca565faaa2704654b638024e"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/28ffd87a1e554022c0065398979894c4.webp#28ffd87a1e554022c0065398979894c4"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/a9b079c43657a260507f4bef8e7d3957.webp#a9b079c43657a260507f4bef8e7d3957"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/263d0050f43934c94de9897776e4a993.webp#263d0050f43934c94de9897776e4a993"/>
+        <img class="collage m-1" src="https://lastfm.freetls.fastly.net/i/u/770x0/434a922ecca5474f1f9d6bbcc3a1050c.webp#434a922ecca5474f1f9d6bbcc3a1050c"/>
+    </div>
+  </div>
+
+  <footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3 bg-dark">
+        <p class="text-light">&copy; Sara Sjöman 2021</p>
+    </div>
+  </footer>
+
+  </body>
 </html>
+
+   
