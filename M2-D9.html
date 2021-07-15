@@ -15,13 +15,7 @@ Most of the requirements in this exercises reference a bootstrap's functionality
 Make sure you check the documentation before creting anything custom.
 -->
 
-    <!-- EXERCISE 4
-        Create a section with an album tracklist inside a Bootstrap table.
-        The row colors of the table must be alternated.
-
-        There should be a column for the track order number, one for the title and one for the track duration.
-        (If you want, you can also add extra columns)
-    -->
+    
 
     <!-- EXERCISE 5
         Add a DELETE bootstrap button at the end of each row of the tracklist. 
@@ -282,7 +276,7 @@ Make sure you check the documentation before creting anything custom.
     <div class="text-center mb-3">
        <img id="image" src="https://lastfm.freetls.fastly.net/i/u/770x0/b8a2f25fbdce30cf18e7e5ca8088b21f.webp#b8a2f25fbdce30cf18e7e5ca8088b21f"/>
     </div>
-        <div class="left mb-5">
+        <div class="left mb-4">
             <h6>Title: 130 mood : TRBL</h6>
             <h6>Artist: DEAN</h6>
             <h6>Release Year: 2016</h6>
@@ -290,6 +284,64 @@ Make sure you check the documentation before creting anything custom.
             <h6>Duration: 7 tracks, 24:04</h6>
             <h6 class="mb-3">How many times I've played a song from this album: 1527</h6>
         </div>
+
+<!-- EXERCISE 4
+        Create a section with an album tracklist inside a Bootstrap table.
+        The row colors of the table must be alternated.
+
+        There should be a column for the track order number, one for the title and one for the track duration.
+        (If you want, you can also add extra columns)
+    -->
+
+    <div class="container text-center col-3">
+        <table class="table mb-5">
+        <h3 class="mb-3">Tracklist</h3>
+        <thead>
+            <tr class="table-dark">
+            <th scope="col">Number</th>
+            <th scope="col">Title</th>
+            <th scope="col">Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="table-dark">
+            <th scope="row">1</th>
+            <td>And You? (outro)</td>
+            <td>3:33</td>
+            </tr>
+            <tr class="table-dark">
+            <th scope="row">2</th>
+            <td>Pour Up</td>
+            <td>3:36</td>
+            </tr>
+            <tr class="table-dark">
+            <th scope="row">3</th>
+            <td>Bonnie & Clyde</td>
+            <td>1:53</td>
+            </tr>
+            <tr class="table-dark">
+            <th scope="row">4</th>
+            <td>what2do</td>
+            <td>3:06</td>
+            </tr>
+            <tr class="table-dark">
+            <th scope="row">5</th>
+            <td>D (half moon)</td>
+            <td>3:34</td>
+            </tr>
+            <tr class="table-dark">
+            <th scope="row">6</th>
+            <td>I Love It</td>
+            <td>3:27</td>
+            </tr>
+            <tr class="table-dark">
+            <th scope="row">7</th>
+            <td>21</td>
+            <td>4:13</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
   </div>
 
     <div class="container text-center mt-2" id="4">
