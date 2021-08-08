@@ -53,3 +53,8 @@ ol {
 .synthpop{
     width: 110px;
 }
+
+#addTrack:hover {
+    box-shadow:  0 0.5em 0.5em -0.4em #000000;
+    transform: translateY(-0.25em);
+}
