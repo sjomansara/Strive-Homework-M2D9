@@ -101,6 +101,8 @@ Make sure you check the documentation before creting anything custom.
   </head>
   <body>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -357,7 +359,70 @@ Make sure you check the documentation before creting anything custom.
             </tr>
         </tbody>
         </table>
-        <button type="button" class="btn btn-dark mb-5" id="addTrack" onclick="">Add Track</button>
+
+        <!-- EXERCISE 6
+        Add an "Add Track" button under the tracklist of the album. 
+        It should have a nice shadow transition when it gets hovered (with the box-shadow property) to look like 
+        the button was elevating itself every time the user hovers onto it.        
+        -->
+
+        <button type="button" class="btn btn-dark mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal" id="addTrack">Add Track</button>
+    
+        <!-- EXERCISE 7
+        On the click of "Add Track" button, a modal should appear.
+        (check in the documentation the modal+button example)
+        
+        The modal shall contain input fields with (avoid using a <form>):
+        - Track number
+        - Track title
+        - Track duration
+        - Track featuring
+        - Live Track (checkbox)
+
+        The fields should be inside an Input Group and divided in 2 columns.
+        -->
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Track</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row row-cols-2 input-group">
+                    <div class="col">
+                        <label for="track-number" class="col-form-label">Track number:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="title" class="col-form-label">Title:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="duration" class="col-form-label">Duration:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col">
+                        <label for="featuring" class="col-form-label">Featuring:</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="form-check col-3 m-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Live Track
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-dark">Add Track</button>
+            </div>
+            </div>
+        </div>
+        </div>
+    
     </div>
   </div>
 
@@ -417,10 +482,9 @@ Make sure you check the documentation before creting anything custom.
         // console.log(document.getElementsByTagName("tr"))
 
         function onDeleteClick(id) {
-            let row = document.getElementById(id);
-            row.remove();
+            let row = document.getElementById(id)
+            row.remove()
         }
-
 
     </script>
 
